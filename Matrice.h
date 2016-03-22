@@ -1,7 +1,3 @@
-
-Deuxieme essai de mes couilles !!
-
-
 #include <iostream>
 #include <vector>
 
