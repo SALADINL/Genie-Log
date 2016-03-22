@@ -1,7 +1,3 @@
-
-grosse bite de mes couillles !!
-
-
 #include <iostream>
 #include <vector>
 
