@@ -45,15 +45,19 @@ int Matrice::NombreCases();
 /**
  * @brief      Retourne la référence de la case
  *
+ * @param      Position de la case (integer) 
+ *
  * @return     Structure Case par référence
  */
-Case& Matrice::operator();
+Case& Matrice::operator()(int element);
 /**
  * @brief      Retourne la case
  *
+ * @param      Position de la case (integer) 
+ *
  * @return     Structure Case
  */
-Case Matrice::operator();
+Case Matrice::operator()(int element);
 /**
  * @brief      Opérateur qui affiche le contenu d'une matrice, seulement les cases pleines
  *

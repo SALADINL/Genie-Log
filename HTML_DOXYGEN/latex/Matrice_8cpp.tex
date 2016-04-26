@@ -1,0 +1,143 @@
+\hypertarget{Matrice_8cpp}{\section{Référence du fichier Matrice.\-cpp}
+\label{Matrice_8cpp}\index{Matrice.\-cpp@{Matrice.\-cpp}}
+}
+
+
+Librairie de gestion de matrice.  
+
+
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$fstream$>$}\\*
+{\ttfamily \#include \char`\"{}Matrice.\-h\char`\"{}}\\*
+\subsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{Matrice_8cpp_ad254a1963f3c553fa958f99fa41e88fe}{ostream \& \hyperlink{Matrice_8cpp_ad254a1963f3c553fa958f99fa41e88fe}{operator$<$$<$} (std\-::ostream \&flux, const \hyperlink{classMatrice}{Matrice} \&matrice)}\label{Matrice_8cpp_ad254a1963f3c553fa958f99fa41e88fe}
+
+\begin{DoxyCompactList}\small\item\em Opérateur qui affiche le contenu d'une matrice, seulement les cases pleines. \end{DoxyCompactList}\item 
+bool \hyperlink{Matrice_8cpp_aac431b5a5d4070d1558a297f831b4791}{Init} (int lig, int col, int \&i, int \&j, double \&valeur)
+\begin{DoxyCompactList}\small\item\em Fonction qui va créer une matrice. \end{DoxyCompactList}\item 
+int \hyperlink{Matrice_8cpp_a75622ad7900570311d697581907f4e98}{Check\-All\-Char} (int i, string str, int taille)
+\begin{DoxyCompactList}\small\item\em Oblige de rentrer de les bon types de valeur. \end{DoxyCompactList}\item 
+int \hyperlink{Matrice_8cpp_aa77a0d548463b402fb8ac6637c1f93b7}{Check\-String\-To\-Int} (string mot)
+\begin{DoxyCompactList}\small\item\em Vérifie si on peut rentrer que des valeur de type integer. \end{DoxyCompactList}\item 
+double \hyperlink{Matrice_8cpp_a37c76892a222b1db6967ede534273c3f}{Check\-String\-To\-Double} (string mot)
+\begin{DoxyCompactList}\small\item\em Vérifie si on peut rentrer que des valeur de type double. \end{DoxyCompactList}\item 
+\hypertarget{Matrice_8cpp_a4f8546af74ed0bdd4558a8ed69ef9902}{\hyperlink{classMatrice}{Matrice} \hyperlink{Matrice_8cpp_a4f8546af74ed0bdd4558a8ed69ef9902}{operator+} (const \hyperlink{classMatrice}{Matrice} \&matrice1, const \hyperlink{classMatrice}{Matrice} \&matrice2)}\label{Matrice_8cpp_a4f8546af74ed0bdd4558a8ed69ef9902}
+
+\begin{DoxyCompactList}\small\item\em Opérateur d'addition entre deux matrices. \end{DoxyCompactList}\item 
+\hypertarget{Matrice_8cpp_aae8e1db022f4f29b3fa4d0a8a941bd48}{\hyperlink{classMatrice}{Matrice} \hyperlink{Matrice_8cpp_aae8e1db022f4f29b3fa4d0a8a941bd48}{operator-\/} (const \hyperlink{classMatrice}{Matrice} \&matrice1, const \hyperlink{classMatrice}{Matrice} \&matrice2)}\label{Matrice_8cpp_aae8e1db022f4f29b3fa4d0a8a941bd48}
+
+\begin{DoxyCompactList}\small\item\em Opérateur de soustraction entre deux matrices. \end{DoxyCompactList}\item 
+\hypertarget{Matrice_8cpp_afb7eb56d44633de0e259ecd86f44a832}{\hyperlink{classMatrice}{Matrice} \hyperlink{Matrice_8cpp_afb7eb56d44633de0e259ecd86f44a832}{operator$\ast$} (const \hyperlink{classMatrice}{Matrice} \&matrice1, const \hyperlink{classMatrice}{Matrice} \&matrice2)}\label{Matrice_8cpp_afb7eb56d44633de0e259ecd86f44a832}
+
+\begin{DoxyCompactList}\small\item\em Opérateur de multiplication entre deux matrices. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+Librairie de gestion de matrice. \begin{DoxyAuthor}{Auteur}
+Léo Saladin 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+26 avril 2016 
+\end{DoxyDate}
+
+
+\subsection{Documentation des fonctions}
+\hypertarget{Matrice_8cpp_a75622ad7900570311d697581907f4e98}{\index{Matrice.\-cpp@{Matrice.\-cpp}!Check\-All\-Char@{Check\-All\-Char}}
+\index{Check\-All\-Char@{Check\-All\-Char}!Matrice.cpp@{Matrice.\-cpp}}
+\subsubsection[{Check\-All\-Char}]{\setlength{\rightskip}{0pt plus 5cm}int Check\-All\-Char (
+\begin{DoxyParamCaption}
+\item[{int}]{i, }
+\item[{string}]{str, }
+\item[{int}]{taille}
+\end{DoxyParamCaption}
+)}}\label{Matrice_8cpp_a75622ad7900570311d697581907f4e98}
+
+
+Oblige de rentrer de les bon types de valeur. 
+
+
+\begin{DoxyParams}[1]{Paramètres}
+\mbox{\tt in}  & {\em i} & Coordonnée d'une case ligne ou colonne \\
+\hline
+\mbox{\tt in}  & {\em str} & Chaine de caractère \\
+\hline
+\mbox{\tt in}  & {\em taille} & Total de ligne ou colonne\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Boolean, retourne vrai si le condition est respecté 
+\end{DoxyReturn}
+\hypertarget{Matrice_8cpp_a37c76892a222b1db6967ede534273c3f}{\index{Matrice.\-cpp@{Matrice.\-cpp}!Check\-String\-To\-Double@{Check\-String\-To\-Double}}
+\index{Check\-String\-To\-Double@{Check\-String\-To\-Double}!Matrice.cpp@{Matrice.\-cpp}}
+\subsubsection[{Check\-String\-To\-Double}]{\setlength{\rightskip}{0pt plus 5cm}double Check\-String\-To\-Double (
+\begin{DoxyParamCaption}
+\item[{string}]{mot}
+\end{DoxyParamCaption}
+)}}\label{Matrice_8cpp_a37c76892a222b1db6967ede534273c3f}
+
+
+Vérifie si on peut rentrer que des valeur de type double. 
+
+
+\begin{DoxyParams}[1]{Paramètres}
+\mbox{\tt in}  & {\em mot} & Chaine de caractère\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Valeur de type double 
+\end{DoxyReturn}
+\hypertarget{Matrice_8cpp_aa77a0d548463b402fb8ac6637c1f93b7}{\index{Matrice.\-cpp@{Matrice.\-cpp}!Check\-String\-To\-Int@{Check\-String\-To\-Int}}
+\index{Check\-String\-To\-Int@{Check\-String\-To\-Int}!Matrice.cpp@{Matrice.\-cpp}}
+\subsubsection[{Check\-String\-To\-Int}]{\setlength{\rightskip}{0pt plus 5cm}int Check\-String\-To\-Int (
+\begin{DoxyParamCaption}
+\item[{string}]{mot}
+\end{DoxyParamCaption}
+)}}\label{Matrice_8cpp_aa77a0d548463b402fb8ac6637c1f93b7}
+
+
+Vérifie si on peut rentrer que des valeur de type integer. 
+
+
+\begin{DoxyParams}[1]{Paramètres}
+\mbox{\tt in}  & {\em mot} & Chaine de caractère\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Retourne un entier 
+\end{DoxyReturn}
+\hypertarget{Matrice_8cpp_aac431b5a5d4070d1558a297f831b4791}{\index{Matrice.\-cpp@{Matrice.\-cpp}!Init@{Init}}
+\index{Init@{Init}!Matrice.cpp@{Matrice.\-cpp}}
+\subsubsection[{Init}]{\setlength{\rightskip}{0pt plus 5cm}bool Init (
+\begin{DoxyParamCaption}
+\item[{int}]{lig, }
+\item[{int}]{col, }
+\item[{int \&}]{i, }
+\item[{int \&}]{j, }
+\item[{double \&}]{valeur}
+\end{DoxyParamCaption}
+)}}\label{Matrice_8cpp_aac431b5a5d4070d1558a297f831b4791}
+
+
+Fonction qui va créer une matrice. 
+
+
+\begin{DoxyParams}[1]{Paramètres}
+\mbox{\tt in}  & {\em lig} & Total de ligne de la matrice \\
+\hline
+\mbox{\tt in}  & {\em col} & Total de colonne de la matrice \\
+\hline
+ & {\em i} & Ligne de la case \\
+\hline
+ & {\em j} & Colonne de la case \\
+\hline
+ & {\em valeur} & Valeur de la case\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Boolean, retourne vrai si c'est possible 
+\end{DoxyReturn}
