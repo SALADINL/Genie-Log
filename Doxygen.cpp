@@ -7,43 +7,43 @@
 */
 
 /**
- * @brief      Contructeur a deux arguments, créer un tableau de structure
+ * @brief      Contructeur a deux arguments, créer un tableau de structure. Les arguments définissent le nombre de lignes et colonnes de la matrice creuse.
  *
- * @param[in]  ligne    Nombre de ligne
- * @param[in]  colonne  Nombre de colonne
+ * @param[in]  ligne    Nombre de ligne de la matrice.
+ * @param[in]  colonne  Nombre de colonne de la matrice.
  */
  Matrice::Matrice(int ligne, int colonne);
  /**
- * @brief      Contructeur a un argument, chargeant une matrice à partir d'un string
+ * @brief      Contructeur a un argument, chargeant une matrice à partir d'un string.
  *
- * @param[in]  nom   Chaine de caractère comportant le nom du fichier à charger
+ * @param[in]  nom   Chaine de caractère comportant le nom du fichier à charger.
  */
 Matrice::Matrice(string nom);
 /**
- * @brief      Destructeur vide
+ * @brief      Destructeur vide car il n'y a aucun élément dynamique à détruire.
  */
 Matrice::~Matrice();
 /**
- * @brief      Retourne le nombre de ligne
+ * @brief      Retourne le nombre de ligne de la matrice.
  *
  * @return     Entier
  */
 int Matrice::TailleLigne();
 /**
- * @brief      Retourne le nombre de colonne
+ * @brief      Retourne le nombre de colonne de la matrice.
  *
  * @return     Entier
  */
 int Matrice::TailleColonne();
 
 /**
- * @brief      Retourne le nombre de case existent
+ * @brief      Retourne le nombre de case non nulles de la matrice.
  *
  * @return     Entier
  */
 int Matrice::NombreCases();
 /**
- * @brief      Retourne la référence de la case
+ * @brief      Permet d'accéder au vector private de la class. 
  *
  * @param      Position de la case (integer) 
  *
