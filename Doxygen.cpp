@@ -173,3 +173,4 @@ Matrice& Matrice::operator+=(const Matrice& matrice);
  * @brief      Cet opérateur permet de soustraire la deuxième matrice directement avec la premiere.
  */
 Matrice& Matrice::operator-=(const Matrice& matrice);
+
