@@ -26,51 +26,52 @@ Matrice::~Matrice();
 /**
  * @brief      Retourne le nombre de ligne de la matrice.
  *
- * @return     Entier
+ * @return     Entier.
  */
-int Matrice::TailleLigne();
+int Matrice::TailleLigne() const;
 /**
  * @brief      Retourne le nombre de colonne de la matrice.
  *
- * @return     Entier
+ * @return     Entier.
  */
-int Matrice::TailleColonne();
+int Matrice::TailleColonne() const;
 
 /**
  * @brief      Retourne le nombre de case non nulles de la matrice.
  *
- * @return     Entier
+ * @return     Entier.
  */
-int Matrice::NombreCases();
+int Matrice::NombreCases() const;
 /**
- * @brief      Permet d'accéder au vector private de la class. 
+ * @brief      Permet d'accéder au vector private de la class. Cela va donc nous retourner la structure case à la position élément.
  *
- * @return     Structure Case par référence
+ * @return     Structure Case par référence.
  */
-Case& Matrice::operator();
+Case& Matrice::operator()(int element);
 /**
- * @brief      Retourne la case
+ * @brief      Permet d'accéder au vector private de la class. Cela va donc nous retourner la structure case à la position élément.
  *
- * @return     Structure Case
+ * @return     Structure Case.
  */
-Case Matrice::operator();
+Case Matrice::operator()(int element) const;
 /**
- * @brief      Opérateur qui affiche le contenu d'une matrice, seulement les cases pleines
+ * @brief      Surcharge de l'opérateur << qui affiche les cases de la matrice (donc seulement les cases non nulles).
  *
+ * @return     Retourne un objet ostream par référence.
  */
 ostream& operator<<(std::ostream& flux, const Matrice& matrice);
 /**
- * @brief      Initialisation une matrice tant que l'utilisateur veut ajouter des cases
+ * @brief      La fonction Initialisation() permet à l'utilisateur d'ajouter des cases tant qu'il le veut dans la matrice.
  */
 void Matrice::Initialisation();
 /**
- * @brief      Fonction qui va créer une matrice
+ * @brief      Fonction qui va ajouter les cases à la matrice de structure de cases.
  *
- * @param[in]  lig     Total de ligne de la matrice
- * @param[in]  col     Total de colonne de la matrice
- * @param      i       Ligne de la case
- * @param      j       Colonne de la case
- * @param      valeur  Valeur de la case
+ * @param[in]  lig     Nombre de ligne de la matrice.
+ * @param[in]  col     Nombre de colonne de la matrice.
+ * @param      i       Ligne de la case.
+ * @param      j       Colonne de la case.
+ * @param      valeur  Valeur de la case.
  *
  * @return     Boolean, retourne vrai si c'est possible
  */
