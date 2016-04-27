@@ -23,11 +23,11 @@ bool Init(int lig, int col, int& i, int& j, double& valeur){
 		j = VerifToutChar(j,colonne,col);
 		cout << "Entrez la valeur : " << endl;
 		cin >> val;
-		valeur = StringVersDouble(val);
+		valeur = stod(val);
 		if(valeur == 0){
 			cout << "Entrez une valeur de type double : " << endl;
 			cin >> val;
-			valeur = StringVersDouble(val);
+			valeur = stod(val);
 		}
 		return true;
 	}

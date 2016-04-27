@@ -86,7 +86,7 @@ void Matrice::Initialisation();
  *
  * @return     Retourne un entier.
  */
-int CheckAllChar(int i, string str, int taille);
+int VerifToutChar(int i, string str, int taille);
 /**
  * @brief      Vérifie si la chaine de caractère est valide pour la transformer en entier.
  *
@@ -94,15 +94,7 @@ int CheckAllChar(int i, string str, int taille);
  *
  * @return     Retourne un entier.
  */
-int CheckStringToInt(string mot);
-/**
- * @brief      Empêche l'utilisateur de rentrer autre chose qu'un double pour la valeur de la case à modifier.
- *
- * @param[in]  mot   Chaine de caractère contenant le double à transformer.
- *
- * @return     Valeur de type double.
- */
-double CheckStringToDouble(string mot);
+int StringVersInt(string mot);
 /**
  * @brief      Permet de modifier une case en particulier, elle sera appelée dans la fonction Initialisation().
  *
@@ -173,4 +165,3 @@ Matrice& Matrice::operator+=(const Matrice& matrice);
  * @brief      Cet opérateur permet de soustraire la deuxième matrice directement avec la premiere.
  */
 Matrice& Matrice::operator-=(const Matrice& matrice);
-

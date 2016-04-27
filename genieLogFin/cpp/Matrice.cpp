@@ -53,7 +53,12 @@ void Matrice::Initialisation(){
 
 
 bool Matrice::AjouterCase(int ligne, int colonne, double valeur){
-	if(ligne < tailleLigne && colonne < tailleColonne){
+	bool test = false;
+	for(int i=0; i < nombreCases; i++){
+		if(cases[i].caseLigne == ligne && cases[i].caseColonne == colonne)
+			test = true;
+	}
+	if(ligne < tailleLigne && colonne < tailleColonne && !test){
 		vector<Case> tmpCases(nombreCases+1);
 		for(int i=0; i < nombreCases; i++)
 			tmpCases[i] = cases[i];
@@ -65,7 +70,7 @@ bool Matrice::AjouterCase(int ligne, int colonne, double valeur){
 		return true;
 	}
 	else{
-		cerr << "AjouterCase impossible en : "<<ligne<<" "<<colonne<<endl;
+		cerr << "AjouterCase impossible en : ("<<ligne<<","<<colonne<<")"<<endl;
 		return false;
 	}
 }

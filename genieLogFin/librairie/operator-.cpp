@@ -11,7 +11,10 @@ Matrice operator-(const Matrice& matrice1,const Matrice& matrice2){
 		for(int i=0; i < matrice1.NombreCases(); i++){
 			for(int j=0;j < matrice2.NombreCases(); j++){
 				if(matrice1(i).caseLigne == matrice2(j).caseLigne && matrice1(i).caseColonne == matrice2(j).caseColonne){
-					res.ModifierCase(matrice1(i).caseLigne,matrice1(i).caseColonne,matrice1(i).caseValeur - matrice2(j).caseValeur);
+					if(matrice1(i).caseLigne == 0 && matrice1(i).caseColonne == 0)
+						res.AjouterCase(matrice1(i).caseLigne,matrice1(i).caseColonne,matrice1(i).caseValeur - matrice2(j).caseValeur);
+					else
+						res.ModifierCase(matrice1(i).caseLigne,matrice1(i).caseColonne,matrice1(i).caseValeur - matrice2(j).caseValeur);
 				}
 				else{
 					if(!res.EstPresent(matrice1(i)))

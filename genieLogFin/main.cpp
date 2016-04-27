@@ -74,8 +74,35 @@ int main(){
 
 */
 	Matrice A(3,3);
-	A.AjouterCase(1,1,-2);
-	cout << A;
+	A.Initialisation();
+	cout << A; cout << endl;
+	Matrice B(3,3);
+	B.Charger("matricedeuxdeux.txt");
+	cout << B; cout << endl;
+	Matrice C(3,3);
+
+	C = A + B;
+	cout << C; cout << endl;
+
+/*
+	Matrice C(3,3);
+	C.Charger("matricedeuxdeux.txt");
+	C.AjouterCase(0,0,13);
+	cout << C; cout << endl;
+
+	Matrice D(3,3);
+	D.Charger("matricedeuxdeux.txt");
+	D.AjouterCase(2,1,24);
+	cout << D; cout << endl;
+
+	Matrice A(3,3);
+
+	A = C + D;
+	cout << A; cout << endl;
+
+	C += D;
+	cout << C; cout << endl;
+*/
 
 return 0;
 }
