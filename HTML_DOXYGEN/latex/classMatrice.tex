@@ -1,7 +1,7 @@
-\hypertarget{classMatrice}{\section{Référence de la classe Matrice}
+\hypertarget{classMatrice}{\section{Matrice Class Reference}
 \label{classMatrice}\index{Matrice@{Matrice}}
 }
-\subsection*{Fonctions membres publiques}
+\subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{classMatrice_a381368ea1a5753a9864c31a1e1596a2e}{Matrice} (int ligne=10000, int colonne=10000)
@@ -52,7 +52,7 @@ bool \hyperlink{classMatrice_a57bd41fe4dc7b130c7c808d35f2c11f1}{Est\-Present} (\
 \begin{DoxyCompactList}\small\item\em Cet opérateur permet de soustraire la deuxième matrice directement avec la premiere. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
-\subsection{Documentation des constructeurs et destructeur}
+\subsection{Constructor \& Destructor Documentation}
 \hypertarget{classMatrice_a381368ea1a5753a9864c31a1e1596a2e}{\index{Matrice@{Matrice}!Matrice@{Matrice}}
 \index{Matrice@{Matrice}!Matrice@{Matrice}}
 \subsubsection[{Matrice}]{\setlength{\rightskip}{0pt plus 5cm}Matrice\-::\-Matrice (
@@ -66,7 +66,7 @@ bool \hyperlink{classMatrice_a57bd41fe4dc7b130c7c808d35f2c11f1}{Est\-Present} (\
 Contructeur a deux arguments, créer un tableau de structure. Les arguments définissent le nombre de lignes et colonnes de la matrice creuse. 
 
 
-\begin{DoxyParams}[1]{Paramètres}
+\begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em ligne} & Nombre de ligne de la matrice. \\
 \hline
 \mbox{\tt in}  & {\em colonne} & Nombre de colonne de la matrice. \\
@@ -74,7 +74,7 @@ Contructeur a deux arguments, créer un tableau de structure. Les arguments déf
 \end{DoxyParams}
 
 
-\subsection{Documentation des fonctions membres}
+\subsection{Member Function Documentation}
 \hypertarget{classMatrice_a8af31f6f88fa6fb2be45687b221286d1}{\index{Matrice@{Matrice}!Ajouter\-Case@{Ajouter\-Case}}
 \index{Ajouter\-Case@{Ajouter\-Case}!Matrice@{Matrice}}
 \subsubsection[{Ajouter\-Case}]{\setlength{\rightskip}{0pt plus 5cm}bool Matrice\-::\-Ajouter\-Case (
@@ -89,7 +89,7 @@ Contructeur a deux arguments, créer un tableau de structure. Les arguments déf
 Permet de modifier une case en particulier, elle sera appelée dans la fonction \hyperlink{classMatrice_af2e5ed60f4d4ccbbc16140fa4e4d0ef0}{Initialisation()}. 
 
 
-\begin{DoxyParams}[1]{Paramètres}
+\begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em ligne} & Position de la ligne. \\
 \hline
 \mbox{\tt in}  & {\em colonne} & Position de la colonne. \\
@@ -97,7 +97,7 @@ Permet de modifier une case en particulier, elle sera appelée dans la fonction 
 \mbox{\tt in}  & {\em valeur} & Valeur de la case à modifier.\\
 \hline
 \end{DoxyParams}
-\begin{DoxyReturn}{Renvoie}
+\begin{DoxyReturn}{Returns}
 Boolean, retourne vrai si la case a bien été créée. 
 \end{DoxyReturn}
 \hypertarget{classMatrice_ab1cf951124693247bc59fcf7a5649b3c}{\index{Matrice@{Matrice}!Charger@{Charger}}
@@ -112,7 +112,7 @@ Boolean, retourne vrai si la case a bien été créée.
 Charge une matrice à partir du fichier de nom \-: \char`\"{}nom\char`\"{}. 
 
 
-\begin{DoxyParams}[1]{Paramètres}
+\begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em nom} & Chaine de caractère contenant le nom du fichier où est stocké la matrice sous forme L\-V\-C. \\
 \hline
 \end{DoxyParams}
@@ -128,11 +128,11 @@ Charge une matrice à partir du fichier de nom \-: \char`\"{}nom\char`\"{}.
 Test si la case element existe déjà dans le tableau de structure. 
 
 
-\begin{DoxyParams}[1]{Paramètres}
+\begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em element} & Structure de case.\\
 \hline
 \end{DoxyParams}
-\begin{DoxyReturn}{Renvoie}
+\begin{DoxyReturn}{Returns}
 Boolean 
 \end{DoxyReturn}
 \hypertarget{classMatrice_ad43a0aff1d4a0867c5a7a41578379429}{\index{Matrice@{Matrice}!Modifier\-Case@{Modifier\-Case}}
@@ -149,7 +149,7 @@ Boolean
 Permet de modifier une case en particulier, elle sera appelée dans les surcharges d'opérateurs pour éviter de re-\/créer une case. 
 
 
-\begin{DoxyParams}[1]{Paramètres}
+\begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em ligne} & Nombre de la ligne \\
 \hline
 \mbox{\tt in}  & {\em colonne} & Nombre de la colonne \\
@@ -168,7 +168,7 @@ Permet de modifier une case en particulier, elle sera appelée dans les surcharg
 
 Retourne le nombre de case non nulles de la matrice. 
 
-\begin{DoxyReturn}{Renvoie}
+\begin{DoxyReturn}{Returns}
 Entier. 
 \end{DoxyReturn}
 \hypertarget{classMatrice_a9296005ce933f25059fc65b88261bbef}{\index{Matrice@{Matrice}!operator()@{operator()}}
@@ -182,7 +182,7 @@ Entier.
 
 Permet d'accéder au vector private de la class. Cela va donc nous retourner la structure case à la position élément. 
 
-\begin{DoxyReturn}{Renvoie}
+\begin{DoxyReturn}{Returns}
 Structure \hyperlink{structCase}{Case} par référence. 
 \end{DoxyReturn}
 \hypertarget{classMatrice_af2c2f32b3d8199af19dfbf296d54b6c7}{\index{Matrice@{Matrice}!operator()@{operator()}}
@@ -196,7 +196,7 @@ Structure \hyperlink{structCase}{Case} par référence.
 
 Permet d'accéder au vector private de la class. Cela va donc nous retourner la structure case à la position élément. 
 
-\begin{DoxyReturn}{Renvoie}
+\begin{DoxyReturn}{Returns}
 Structure \hyperlink{structCase}{Case}. 
 \end{DoxyReturn}
 \hypertarget{classMatrice_ada819efc5f484ea7f41bfe9f79c77694}{\index{Matrice@{Matrice}!Sauvegarder@{Sauvegarder}}
@@ -211,7 +211,7 @@ Structure \hyperlink{structCase}{Case}.
 Sauvegarde une matrice dans un fichier de nom \-: \char`\"{}nom\char`\"{}. 
 
 
-\begin{DoxyParams}[1]{Paramètres}
+\begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em nom} & Chaine de caractère contenant le nom du fichier où sera stocké la matrice sous forme L\-V\-C. \\
 \hline
 \end{DoxyParams}
@@ -226,7 +226,7 @@ Sauvegarde une matrice dans un fichier de nom \-: \char`\"{}nom\char`\"{}.
 
 Retourne le nombre de colonne de la matrice. 
 
-\begin{DoxyReturn}{Renvoie}
+\begin{DoxyReturn}{Returns}
 Entier. 
 \end{DoxyReturn}
 \hypertarget{classMatrice_a4aea33f47f5eaa578d529c39380c1202}{\index{Matrice@{Matrice}!Taille\-Ligne@{Taille\-Ligne}}
@@ -240,12 +240,12 @@ Entier.
 
 Retourne le nombre de ligne de la matrice. 
 
-\begin{DoxyReturn}{Renvoie}
+\begin{DoxyReturn}{Returns}
 Entier. 
 \end{DoxyReturn}
 
 
-La documentation de cette classe a été générée à partir des fichiers suivants \-:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
 \item 
 Matrice.\-h\item 
 Doxygen.\-cpp\item 
